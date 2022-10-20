@@ -22,9 +22,20 @@
 
   <script type="text/babel">
     const Banner = () => {
+      const title = "Welcome to my site";
+      const subTitle = "This is my site";
+      const address = "https://eroberts.dev";
+
+      const handleClick = () => {
+        console.log("clicked");
+      }
+
       return (
         <div className="banner">
-          <h2>My Banner</h2>
+          <h2>{title}</h2>
+          <p>{subTitle.toUpperCase()}</p>
+          <button onClick={handleClick}>Click Me</button>
+          <a href={address}>My Website</a>
         </div>
       )
     }
